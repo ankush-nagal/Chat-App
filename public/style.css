@@ -1,0 +1,98 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat_section {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  height: 90vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.brand {
+  background-color: #4a90e2;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.message_area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.incoming {
+  background: #f0f0f0;
+  align-self: flex-start;
+  border-left: 4px solid #4a90e2;
+}
+
+.outgoing {
+  background: #d1e7ff;
+  align-self: flex-end;
+  border-right: 4px solid #007bff;
+}
+
+.message h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.message p {
+  font-size: 15px;
+  color: #444;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  resize: none;
+  border-top: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #999;
+}
